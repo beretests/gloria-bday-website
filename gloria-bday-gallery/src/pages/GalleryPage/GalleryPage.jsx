@@ -11,8 +11,8 @@ function GalleryPage() {
   const [currentPic, setCurrentPic] = useState({});
 
   async function getPics() {
-    const response = await axios.get(`${url}`);
-    console.log(response);
+    const response = await axios.get(`${url}/pics`);
+    // console.log(response);
     setPictures(response.data);
   }
 
