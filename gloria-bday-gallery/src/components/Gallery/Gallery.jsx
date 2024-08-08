@@ -28,11 +28,11 @@ function Gallery({ pictures }) {
               <div className="carousel-container">
                 <img
                   // src={`${picture.image}`}
-                  src={`${url}/${picture.image}`}
+                  src={picture.image}
                   alt={picture.name}
                   className="carousel-image"
                 />
-
+                {/* {console.log(img.src)} */}
                 <Carousel.Caption>
                   <h3 className="feelings">{picture.label}</h3>
                 </Carousel.Caption>
