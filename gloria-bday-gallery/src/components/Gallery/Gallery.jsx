@@ -27,7 +27,8 @@ function Gallery({ pictures }) {
             <Carousel.Item key={picture.id}>
               <div className="carousel-container">
                 <img
-                  src={`${url}/${picture.image}`}
+                  src={`${picture.image}`}
+                  // src={`${url}/${picture.image}`}
                   alt={picture.name}
                   className="carousel-image"
                   // style={{ width: "100%", height: "auto", borderRadius: "10px" }}
