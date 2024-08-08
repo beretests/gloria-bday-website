@@ -21,18 +21,15 @@ function Gallery({ pictures }) {
     <>
       <div>
         <h1 className="title">Happy Birthday, Gloria!!!&#127874;&#x1F382;</h1>
-        {/* style={{ width: "80%", margin: "auto" }} */}
         <Carousel className="carousel-slide" data-bs-theme="dark">
           {pictures.map((picture) => (
             <Carousel.Item key={picture.id}>
               <div className="carousel-container">
                 <img
-                  // src={`${picture.image}`}
                   src={picture.image}
                   alt={picture.name}
                   className="carousel-image"
                 />
-                {/* {console.log(img.src)} */}
                 <Carousel.Caption>
                   <h3 className="feelings">{picture.label}</h3>
                 </Carousel.Caption>
