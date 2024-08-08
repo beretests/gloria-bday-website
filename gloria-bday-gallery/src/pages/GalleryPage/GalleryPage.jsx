@@ -16,14 +16,14 @@ function GalleryPage() {
     setPictures(response.data);
   }
 
-  async function getCurrentPic(givenId) {
-    try {
-      const response = await axios.get(`${url}/pics/${givenId}`);
-      setCurrentPic(response.data);
-    } catch (err) {
-      console.log("Error: ", err);
-    }
-  }
+  // async function getCurrentPic(givenId) {
+  //   try {
+  //     const response = await axios.get(`${url}/pics/${givenId}`);
+  //     setCurrentPic(response.data);
+  //   } catch (err) {
+  //     console.log("Error: ", err);
+  //   }
+  // }
 
   useEffect(() => {
     getPics();
@@ -32,19 +32,19 @@ function GalleryPage() {
   const { picId } = useParams();
   const id = picId ? picId : defaultId;
 
-  useEffect(() => {
-    getCurrentPic();
-  }, [picId]);
+  // useEffect(() => {
+  //   getCurrentPic();
+  // }, [picId]);
 
-  async function handleLikePic() {
-    try {
-      await axios.put(`${url}/pics/${id}/likes`);
-      const response = await axios.get(`${url}/pics/${id}`);
-      setCurrentPic(response.data);
-    } catch (error) {
-      console.error("Error liking pic:", error);
-    }
-  }
+  // async function handleLikePic() {
+  //   try {
+  //     await axios.put(`${url}/pics/${id}/likes`);
+  //     const response = await axios.get(`${url}/pics/${id}`);
+  //     setCurrentPic(response.data);
+  //   } catch (error) {
+  //     console.error("Error liking pic:", error);
+  //   }
+  // }
 
   return (
     <>
