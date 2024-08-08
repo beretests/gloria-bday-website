@@ -7,7 +7,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "./Gallery.scss";
 
 function Gallery({ pictures }) {
-  const url = import.meta.env.VITE_API_URL;
+  const url = import.meta.env.VITE_DATA_URL;
 
   // const settings = {
   //   dots: true,
