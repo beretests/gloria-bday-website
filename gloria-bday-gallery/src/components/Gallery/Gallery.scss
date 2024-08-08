@@ -8,6 +8,11 @@ h1,
 h3 {
   font-family: "Merienda", sans-serif;
 }
+
+.main-container {
+  background-color: #fffcee;
+}
+
 .carousel-slide {
   // display: flex;
   // margin: 0 auto;
@@ -22,6 +27,7 @@ h3 {
   // border-radius: 4px;
   // // gap: 1rem;
   margin-top: 2rem;
+  background-color: #fffcee;
 }
 
 .carousel-control-prev {

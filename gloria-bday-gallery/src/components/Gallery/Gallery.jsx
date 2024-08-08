@@ -19,7 +19,7 @@ function Gallery({ pictures }) {
 
   return (
     <>
-      <div>
+      <div className="main-container">
         <h1 className="title">Happy Birthday, Gloria!!!&#127874;&#x1F382;</h1>
         <Carousel className="carousel-slide" data-bs-theme="dark">
           {pictures.map((picture) => (
